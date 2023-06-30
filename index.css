@@ -13,7 +13,6 @@ body {
   overflow-x: hidden;
 }
 
-
 .mypic img {
   width: 470px;
   height: 470px;
@@ -21,13 +20,6 @@ body {
 
 }
 
-#top {
-  width: 100%;
-  padding: 20px 2%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
 .details .socmed {
   width: 60px;
