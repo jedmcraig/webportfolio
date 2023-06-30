@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<!-- Mobile Responsiveness -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+	
+	<title>John Mc | Web Developer Portfolio</title>
+
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" type="text/css" href="./index.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+
+	<header>
+
+	<nav id="top" class="navbar navbar-expand-lg navbar-dark">
+  		<a class="navbar-brand" href="#top">JohnMc.Dev</a>
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+    	<span class="navbar-toggler-icon"></span>
+  		</button>
+
+  	<div class="collapse navbar-collapse" id="navbarNav">
+    	<ul class="navbar-nav">
+      		<li class="nav-item active">
+        	<a class="nav-link" href="#landing">HOME<span class="sr-only">(current)</span></a>
+      		</li>
+      		<li class="nav-item">
+        	<a class="nav-link" href="#project">PROJECTS</a>
+      		</li>
+      		<li class="nav-item">
+        	<a class="nav-link" href="#tools">TOOLS</a>
+      		</li>
+      		<li class="nav-item">
+        	<a class="nav-link" href="#contact">CONTACT</a>
+      		</li>
+    		</ul>
+  	</div>
+	</nav>
+
+	</header>
+
+	<section id="landing" class="container-fluid">
+
+		<div class="details row ml-auto">
+
+			<div class="mypic col-lg-3 order-lg-3 col-12 order-2">
+				<img src="./images/John-Wick.png">
+			</div>	
+
+			<!-- Trainee's Name -->
+			<div class="trainee col-lg-3 order-lg-2 col-12 order-2 align-items-center justify-content-center">
+			<h1>Hi, I'm John Macaraig</h1>
+			<!-- Full-Stack Web Developer -->
+			<h3>Full-Stack Web Developer</h3>
+			<p> Service Technician | Instrumentation Engineer | Automation Project Engineer | Automation Coordinator | PLC Programmer | Turned into a Full-Stack Developer</p>
+
+			<a href="#contact" class="hirebtn">Hire Me</a>
+			</div>
+
+			<div class="socmed col-lg-3 order-lg-1 d-flex flex-lg-column col-12 order-3">
+				<a href="https://www.linkedin.com/in/john-edison-m-43681aa9/" class="linkedin" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+				<a href="https://gitlab.com/jmacaraig" class="gitlab" target="_blank"><i class='bx bxl-gitlab' ></i></a>
+				<a href="https://github.com/jedmcraig" class="github" target="_blank"><i class='bx bxl-github' ></i></i></a>
+			</div>
+
+		</div>
+		
+	</section>
+
+	<section id="projects">
+
+		<div class="container-fluid text-center p-4">
+    
+            <h2>PROJECTS</h2>
+
+            
+            <div id="webapp" class="row py-2 d-flex align-content-center justify-content-center">
+                <div class="col-12 order-2 col-md-6 order-md-1 py-2">
+                    <h5>E-Commerce Web API</h5>
+                    <p>As one of the task given by Zuitt, we should be able to re-create an E-Commerce webpage using HTML & CSS.</p>
+                </div>
+                <div class="col-12 order-1 col-md-6 order-md-2 py-2">
+                    <img id="apiImg" class="img-fluid" src="./images/E-Commerce.png"/>
+                </div>
+            </div>
+
+
+            <div id="mom" class="row py-2">
+                <div class="col-12 order-2 col-md-6 order-md-2 py-2">
+                    <h5>Manufacturing Operations Management</h5>
+                    <p>One of my experiences on the industry is maintaining and debugging an automated manufacturing plant that uses an SQL database and IOS applications developed or provided by external suppliers that is linked to SAP.</p>
+                </div>
+                <div class="col-12 order-1 col-md-6 order-md-1 py-2">
+                    <img id="reactImg" class="img-fluid" src="./images/MOM.png"/>
+                </div>
+            </div>
+
+
+             <div id="bms" class="row py-2">
+                <div class="col-12 order-2 col-md-6 order-md-1 py-2">
+                    <h5>Building Management System</h5>
+                    <p>Another part of my experiences on the industry is maintaining and debugging an automated equipments plant that uses an SQL database, PLC and IOS applications developed or provided by external suppliers.</p>
+                </div>
+                <div class="col-12 order-1 col-md-6 order-md-2 py-2">
+                    <img id="reactImg" class="img-fluid" src="./images/BMS.png"/>
+                </div>
+            </div>
+		
+	</section>
+
+	<section id="tools">
+
+		<div class="text-center">
+
+                <h2>TOOLS</h2>
+
+                <div class="d-flex flex-lg-column">
+                    <div id="tools-1" class="d-lg-flex justify-content-between">
+                        <img width="150" src="./images/sql.png"/>
+                        <img width="150" src="./images/flutter.png"/>
+                        <img width="150" src="./images/logo-html5.png"/>
+                        <img width="150" src="./images/logo-git.png"/>
+                        <img width="150" src="./images/logo-css3.png"/>
+                        <img width="150" src="./images/logo-sublime-text-3.png"/>
+                        <img width="150" src="./images/logo-bootstrap.png"/>
+                    </div>
+
+		
+	</section>
+
+	<section id="contact">
+
+		<div id="contact-section" class="container-fluid p-5 text-light">
+    
+    	<h2 class="text-center">CONTACT</h2>
+
+    	<div id="contact-section" class="row mt-3 d-flex justify-content-center">
+        <div class="col-xs-12 col-md-8 col-xl-4">
+            <form id="form-col">
+                <div class="form-group">
+                <label for="FullName">Name:</label>
+                <input type="text" class="form-control" id="FullName" placeholder="Full Name" required>
+                </div>
+
+                <div class="form-group">
+                <label for="exampleInputEmail1">Email address:</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="name@domain.com" required>
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+
+                <div class="form-group">
+                <label for="ContactNumber">Contact Number:</label>
+                <input type="tel" class="form-control" id="ContactNumber" pattern="[0-9]{11}" placeholder="09123456789" required>
+                </div>
+
+                <div class="form-group">
+                 <label for="exampleFormControlSelect1">Inquiry:</label>
+                <select class="form-control" id="exampleFormControlSelect1" required>
+                	<option value="" disabled selected>*Please select*</option>
+                    <option>Project Assistance</option>
+                    <option>Job Invitation</option>
+                    <option>Others</option>
+                </select>
+                </div>
+
+                <div class="form-group">
+                <label for="Message">Message:</label>
+                <textarea class="form-control" id="Message" rows="3"></textarea>
+                </div>
+
+             	<button type="submit" class="btn btn-primary text-light mb-3" data-toggle="modal" data-target="#modalDiv">SUBMIT</button>
+
+             	<div id="modalDiv" class="modal" tabindex="-1">
+					  <div class="modal-dialog">
+					  <div class="modal-content">
+					  <div class="modal-header text-dark">
+					     <h5 class="modal-title">Thank you for reaching out!</h5>
+					       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					       </button>
+					  </div>
+					  <div class="modal-body text-dark">
+					      <p>Message or Inquiry is sent. I'll get back to you as soon as possible</p>
+					  </div>
+					  <div class="modal-footer">
+					      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					  </div>
+					  </div>
+					  </div>
+			</div>
+
+
+
+            </form>
+					
+		
+	</section>
+
+
+		<!-- Bootstrap JS -->
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+</body>
+</html>
