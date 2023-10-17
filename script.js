@@ -3,7 +3,7 @@ const navBorder = document.querySelector('.nav-border')
 const navToggle = document.querySelector('.nav-custom')
 
 function updateSidebar() {
-    if (window.scrollY > 50 || window.innerWidth <= 600) {
+    if (window.scrollY > 50 || window.innerWidth <= 800) {
         primaryNav.classList.add('side-bar');
         navToggle.style.display = 'flex'
         navBorder.style.display = 'none'
