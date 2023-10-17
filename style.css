@@ -137,8 +137,12 @@ body {
     font-size: min(4vw, 40px);
     text-align: left;
     /* border: 2px solid lime; */
-    padding-left: 100px;
+    padding-left: 10vw;
     background-color: #fff;
+}
+
+@media (max-width: 800) {
+    
 }
 
 .description h1 {
