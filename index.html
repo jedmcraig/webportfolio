@@ -1,90 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="style.css" />
 
-    <title>John Mc | Software Developer</title>
+		<title>John Mc | Software Developer</title>
+	</head>
+	<body>
+		<div class="scroller-tracker"></div>
+		<!-- Page Container -->
+		<div class="logo" id="logo">
+			<!-- Logo -->
+			<a href="#" class="logo">JOHN.MC</a>
+			<!-- End of Logo -->
+		</div>
 
-</head>
-<body>
+		<span class="nav-border"></span>
 
-    <!-- Page Container -->
-    <div class="logo" id="logo">
-        <!-- Logo -->
-        <a href="#" class="logo">JOHN.MC</a>
-        <!-- End of Logo -->
-    </div>
+		<header class="primary-header flex">
+			<!-- Menu Icon -->
+			<button id="nav-custom" class="nav-custom icon">
+				<div class="line line1"></div>
+				<div class="line line2"></div>
+			</button>
+			<!-- End of Menu Icon        -->
 
-    <span class="nav-border"></span>
+			<!-- Navigation -->
+			<!-- Navbar -->
+			<nav id="nav">
+				<ul
+					id="primary-navigation"
+					data-visible="false"
+					class="primary-navigation flex"
+				>
+					<li>
+						<a href="#section-1" class="navbar-link pointer-enter pointer-enter"
+							>Home</a
+						>
+					</li>
+					<li>
+						<a href="#section-2" class="navbar-link pointer-enter">About Me</a>
+					</li>
+					<li>
+						<a href="#section-3" class="navbar-link pointer-enter">Projects</a>
+					</li>
+					<li>
+						<a href="#section-5" class="navbar-link pointer-enter">Contact</a>
+					</li>
+				</ul>
+			</nav>
+			<!-- End of Navbar -->
+			<!-- End of Navigation -->
+		</header>
+		<section class="landing content-grid">
+			<div class="description">
+				<span class="dynamic-text"></span>
+				<div class="flex">
+					<p>
+						Hello! I'm John Macaraig, a Full-Stack Developer and an Automation
+						Engineer based in Batangas, Philippines.
+					</p>
+				</div>
 
-    <header class="primary-header flex">
+				<h1>Tech Stack</h1>
 
-        <!-- Menu Icon -->
-          <button id="nav-custom" class="nav-custom icon">
-            <div class="line line1"></div>
-            <div class="line line2"></div>
-          </button>
-        <!-- End of Menu Icon        -->
+				<div class="scroller">
+					<ul class="tech-stack scroller-inner flex">
+						<li><img src="./images/html-5.svg" alt="" /></li>
+						<li><img src="./images/css-3.svg" alt="" /></li>
+						<li><img src="./images/bootstrap.svg" alt="" /></li>
+						<li><img src="./images/tailwindcss-icon.svg" alt="" /></li>
+						<li><img src="./images/javascript.svg" alt="" /></li>
+						<li><img src="./images/git-icon.svg" alt="" /></li>
+						<li><img src="./images/nodejs-icon.svg" alt="" /></li>
+						<li><img src="./images/mongodb-icon.svg" alt="" /></li>
+						<li><img src="./images/postman-icon.svg" alt="" /></li>
+						<li><img src="./images/react.svg" alt="" /></li>
+						<li><img src="./images/jira.svg" alt="" /></li>
+					</ul>
+				</div>
+				<button>Download Resume</button>
+			</div>
+			<div class="photo">
+				<img class="self" src="./images/Cartoonize-JM2-small.png" alt="" />
+				<img class="bg" src="./images/BG-1-trans.png" alt="" />
+			</div>
+		</section>
+		<section class="about-me">
+            <div class="progress"></div>
+			<div class="text-container left">
+				<img src="./images/Sicpa.svg" alt="" />
+				<div class="textbox">
+					<h1>Sicpa SA</h1>
+					<small>2022-2023</small>
+					<p>
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem ea
+						nemo ipsam quibusdam magni voluptate eius consequatur, nostrum fuga
+						amet vel autem minima nam maxime velit? Quasi vero ab quia!
+					</p>
+					<span class="arrow right-arrow"></span>
+				</div>
+			</div>
+			<div class="text-container right">
+				<img src="./images/JTI.svg" alt="" />
+				<div class="textbox">
+					<h1>JTI Asia Manufacturing Corp.</h1>
+					<small>2022-2023</small>
+					<p>
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem ea
+						nemo ipsam quibusdam magni voluptate eius consequatur, nostrum fuga
+						amet vel autem minima nam maxime velit? Quasi vero ab quia!
+					</p>
+					<span class="arrow left-arrow"></span>
+				</div>
+			</div>
+			<div class="text-container left">
+				<img src="./images/Controtek.png" alt="" />
+				<div class="textbox">
+					<h1>Controtek Solutions Inc.</h1>
+					<small>2022-2023</small>
+					<p>
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem ea
+						nemo ipsam quibusdam magni voluptate eius consequatur, nostrum fuga
+						amet vel autem minima nam maxime velit? Quasi vero ab quia!
+					</p>
+					<span class="arrow right-arrow"></span>
+				</div>
+			</div>
+			<div class="text-container right">
+				<img src="./images/JGSPG.webp" alt="" />
+				<div class="textbox">
+					<h1>JG Summit Petrochemical Corp.</h1>
+					<small>2022-2023</small>
+					<p>
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem ea
+						nemo ipsam quibusdam magni voluptate eius consequatur, nostrum fuga
+						amet vel autem minima nam maxime velit? Quasi vero ab quia!
+					</p>
+					<span class="arrow left-arrow"></span>
+				</div>
+			</div>
+			<div class="text-container left">
+				<img src="./images/UE.jpg" alt="" />
+				<div class="textbox">
+					<h1>Uniwell Technologies Inc.</h1>
+					<small>2022-2023</small>
+					<p>
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem ea
+						nemo ipsam quibusdam magni voluptate eius consequatur, nostrum fuga
+						amet vel autem minima nam maxime velit? Quasi vero ab quia!
+					</p>
+					<span class="arrow right-arrow"></span>
+				</div>
+			</div>
+		</section>
 
-        <!-- Navigation -->
-        <!-- Navbar -->
-        <nav id="nav">
-          <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
-              <li><a href="#section-1" class="navbar-link pointer-enter pointer-enter">Home</a></li>
-              <li><a href="#section-2" class="navbar-link pointer-enter">About Me</a></li>
-              <li><a href="#section-3" class="navbar-link pointer-enter">Projects</a></li>
-              <li><a href="#section-5" class="navbar-link pointer-enter">Contact</a></li>
-          </ul>
-  
-        </nav>
-        <!-- End of Navbar -->
-        <!-- End of Navigation -->      
-      
-    </header>
-    <section class="landing content-grid">
-        <div class="description">
-            <span class="dynamic-text"></span>
-            <div class="flex">
-                <p>Hello! I'm John Macaraig, a Full-Stack Developer and an Automation Engineer based in Batangas, Philippines.</p>
-            </div>
+		<!-- End of Page Container -->
 
-            <h1>Tech Stack</h1>
-
-            <div class="scroller">
-                <ul class="tech-stack scroller-inner flex">
-                    <li><img src="./images/html-5.svg" alt="" /></li>
-                    <li><img src="./images/css-3.svg" alt="" /></li>
-                    <li><img src="./images/bootstrap.svg" alt="" /></li>
-                    <li><img src="./images/tailwindcss-icon.svg" alt="" /></li>
-                    <li><img src="./images/javascript.svg" alt="" /></li>
-                    <li><img src="./images/git-icon.svg" alt="" /></li>
-                    <li><img src="./images/nodejs-icon.svg" alt="" /></li>
-                    <li><img src="./images/mongodb-icon.svg" alt="" /></li>
-                    <li><img src="./images/postman-icon.svg" alt="" /></li>
-                    <li><img src="./images/react.svg" alt="" /></li>
-                    <li><img src="./images/jira.svg" alt="" /></li>
-                </ul>
-            </div>
-            <button>Download Resume</button>
-        </div>
-        <div class="photo">
-            <img class="self" src="./images/Cartoonize-JM2-small.png" alt="">
-            <img class="bg" src="./images/BG-1-trans.png" alt="">
-        </div>
-    </section>
-    <section class="about-me">
-        <div>
-            <!-- <h1>About Me</h1> -->
-        </div>
-
-    </section>
-          
-      <!-- End of Page Container -->
-
-      <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-      <script src="script.js"></script>
-</body>
+		<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+		<script src="script.js" type="module"></script>
+	</body>
 </html>

@@ -13,9 +13,19 @@
 }
 
 body {
-    /* background-color: darkred; */
+    background-color: #f2f2f2;
     /* height: 3000px; */
     overflow-x: hidden;
+}
+
+.scroller-tracker {
+    position: fixed;
+    inset: auto 0 0;
+    width: 100%;
+    height: 0.5rem;
+    background-color: slategray;
+    z-index: 1999;
+    transform-origin: left;
 }
 
 /* Primary Header */
@@ -44,7 +54,6 @@ body {
     font-weight: 900;
     text-transform: uppercase;
     color: #000;
-    position: fixed;
     padding: 1rem;
     z-index: -200;
 }
@@ -137,13 +146,9 @@ body {
     font-size: min(4vw, 40px);
     text-align: left;
     /* border: 2px solid lime; */
-    padding-left: 10vw;
-    background-color: #fff;
+    padding-left: 9vw;
 }
 
-@media (max-width: 800) {
-    
-}
 
 .description h1 {
     text-transform: uppercase;
@@ -161,7 +166,7 @@ body {
 }
 
 .typed-cursor {
-    font-size: 120px;
+    font-size: min(11vw, 120px);
 }
 
 .tech-stack img {
@@ -176,9 +181,8 @@ body {
 .scroller {
     overflow: hidden;
     max-width: 100%;
-    outline: 3px solid red;
-    -webkit-mask: linear-gradient(90deg, transparent, #fff 10%, #fff 90%, transparent);
-    mask: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
+    -webkit-mask: linear-gradient(90deg, transparent, #f2f2f2 10%, #f2f2f2 90%, transparent);
+    mask: linear-gradient(90deg, transparent, #f2f2f2 20%, #f2f2f2 80%, transparent);
 }
 
 .scroller .scroller-inner {
@@ -280,6 +284,138 @@ body {
 } */
 
 
+/* About Me */
+
+.about-me {
+    position: relative;
+    max-width: 80%;
+    margin: 10vw; /*auto*/
+}
+
+.progress {
+    position: absolute;
+    width: 6px;
+    height: 0;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    top: 50px;
+    left: 50%;
+    margin: 5px;
+    z-index: -1;
+    transition: 0.4s ease;
+    /* animation: moveline 6s linear forwards; */
+}
+
+@keyframes moveline {
+
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 80%;
+    }
+    
+}
+
+.text-container {
+    margin: 10px;
+    padding: 10px 60px;
+    position: relative;
+    width: 50%;
+    transform: translateX(400%);
+    transition: transform 0.4s ease;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    /* animation: movedown 1s linear forwards; */
+    /* opacity: 0; */
+}
+
+.text-container:nth-of-type(even){
+    transform: translateX(-400%);
+}
+
+.text-container.show {
+    transform: translateX(0);
+}
+
+/* @keyframes movedown {
+
+    0% {
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    
+}
+
+.text-container:nth-child(2) {
+    animation-delay: 1s;
+}
+.text-container:nth-child(3) {
+    animation-delay: 2s;
+}
+.text-container:nth-child(4) {
+    animation-delay: 3s;
+}
+.text-container:nth-child(5) {
+    animation-delay: 4s;
+} */
+
+
+.textbox {
+    padding: 20px 30px;
+    background-color: #fff;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    position: relative;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.about-me .right {
+    left: 50%;
+}
+
+.text-container img {
+    position: absolute;
+    top: 32px;
+    right: -40px;
+    width: 80px;
+    aspect-ratio: 1;
+    object-fit: contain;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.right img {
+    left: -40px;
+}
+
+.textbox .left-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 45px;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #fff;
+    left: -15px;
+}
+
+.textbox .right-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 45px;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #fff;
+    right: -15px;
+}
 
 /* Utility Classes */
 
@@ -293,6 +429,8 @@ body {
     border: 2px solid orangered;
 } */
 
+/* Responsive */
+
 @media (min-width: 1200px) {
     
 .content-grid {
@@ -302,4 +440,34 @@ body {
     justify-content: center;
 }
 
+}
+
+@media screen and (max-width: 1200px) {
+    
+    .about-me {
+        margin: 50px auto;
+    }
+
+    .progress {
+        left: 32px;
+    }
+
+    .text-container {
+        width: 100%;
+        padding-left: 100px;
+        padding-right: 30px;
+    }
+
+    .about-me .right {
+        left: 0;
+    }
+
+    .textbox .right-arrow {
+        left: -15px;
+        transform: rotate(180deg);
+    }
+
+    .right img, .left img {
+        left: -10px;
+    }
 }
