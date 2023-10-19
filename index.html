@@ -36,25 +36,25 @@
 					class="primary-navigation flex"
 				>
 					<li>
-						<a href="#section-1" class="navbar-link pointer-enter pointer-enter"
+						<a href="#landing" class="navbar-link pointer-enter pointer-enter"
 							>Home</a
 						>
 					</li>
 					<li>
-						<a href="#section-2" class="navbar-link pointer-enter">About Me</a>
+						<a href="#about-me" class="navbar-link pointer-enter">About Me</a>
 					</li>
 					<li>
-						<a href="#section-3" class="navbar-link pointer-enter">Projects</a>
+						<a href="#projects" class="navbar-link pointer-enter">Projects</a>
 					</li>
 					<li>
-						<a href="#section-5" class="navbar-link pointer-enter">Contact</a>
+						<a href="#contact" class="navbar-link pointer-enter">Contact</a>
 					</li>
 				</ul>
 			</nav>
 			<!-- End of Navbar -->
 			<!-- End of Navigation -->
 		</header>
-		<section class="landing content-grid">
+		<section class="landing content-grid" id="landing">
 			<div class="description">
 				<span class="dynamic-text"></span>
 				<div class="flex">
@@ -88,7 +88,8 @@
 				<img class="bg" src="./images/BG-1-trans.png" alt="" />
 			</div>
 		</section>
-		<section class="about-me">
+		<section class="about-me" id="about-me">
+            <h1 class="worktext">Work Experience</h1>
             <div class="progress"></div>
 			<div class="text-container left">
 				<img src="./images/Sicpa.svg" alt="" />
@@ -156,7 +157,68 @@
 				</div>
 			</div>
 		</section>
+		<section class="projects" id="projects">
+			<h1 class="project-head">Projects</h1>
+			<div class="project-container">
+				<div class="project-image">
+					<img src="./images/Ecommerce.webp" alt="">
+				</div>
+				<div class="project-description">
+					<small class="project-title">Ecommerce - (OCTOBER 2023)</small>
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quasi numquam itaque minus praesentium totam libero neque minima mollitia, nesciunt cupiditate aspernatur omnis ducimus sunt, aut alias culpa cumque eius.</p>
+				</div>
+			</div>
+		</section>
+		<section class="contact" id="contact">
+			<div class="contact-container">
+				<h2 class="form-heading">Let's Talk</h2>
+				<form class="contact-form center" action="POST" data-netlify="true">
+				  <input
+					type="text"
+					class="contact-form-input pointer-enter"
+					placeholder="Name"
+					id="name"
+					autocomplete="off"
+					name="name"
+				  />
+				  <p class="message">Error Message</p>
+				  <input
+					type="text"
+					class="contact-form-input pointer-enter"
+					placeholder="Email"
+					id="email"
+					autocomplete="off"
+					name="email"
+				  />
+				  <p class="message">Error Message</p>
+				  <input
+					type="text"
+					class="contact-form-input pointer-enter"
+					placeholder="Subject"
+					id="subject"
+					autocomplete="off"
+					name="subject"
+				  />
+				  <p class="message">Error Message</p>
+				  <textarea
+					class="contact-form-input contact-form-textarea pointer-enter"
+					placeholder="Message"
+					id="message"
+					autocomplete="off"
+					name="message"
+				  ></textarea>
+				  <p class="message">Error Message</p>
+				  <input
+					type="submit"
+					class="form-submit-btn pointer-enter"
+					value="Send Request"
+				  />
+				</form>
+			</div>
+		</section>
+		<footer>
 
+		</footer>
 		<!-- End of Page Container -->
 
 		<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>

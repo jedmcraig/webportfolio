@@ -39,6 +39,8 @@ body {
     font-size: 20px;
     font-weight: 900;
     text-transform: uppercase;
+    cursor: pointer;
+    z-index: 2999;
 }
 
 .primary-navigation a {
@@ -288,9 +290,21 @@ body {
 
 .about-me {
     position: relative;
-    max-width: 80%;
-    margin: 10vw; /*auto*/
-    overflow-x: hidden;
+    max-width: 95%;
+    margin: 5px 10vw; /*auto*/
+    padding-bottom: 30px;
+    overflow: hidden;
+}
+
+.about-me .worktext {
+    margin: 0 auto 50px;
+    padding: 20px;
+    border-radius: 20px;
+    width: max-content;
+    text-transform: uppercase;
+    font-size: min(4vw, 40px);
+    font-weight: 900;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
 .progress {
@@ -299,12 +313,12 @@ body {
     height: 0;
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    top: 50px;
+    top: 150px;
     left: 50%;
     margin: 5px;
     z-index: -1;
     transition: 0.4s ease;
-    overflow-x: hidden;
+    overflow: hidden;
     /* animation: moveline 6s linear forwards; */
 }
 
@@ -325,7 +339,6 @@ body {
     padding: 10px 60px;
     position: relative;
     width: 50%;
-    overflow-x: hidden;
     transform: translateX(400%);
     transition: transform 0.4s ease;
     /* background-color: rgba(0, 0, 0, 0.3); */
@@ -361,7 +374,7 @@ body {
 .text-container:nth-child(3) {
     animation-delay: 2s;
 }
-.text-container:nth-child(4) {
+.text-containe`:nth-child(4) {
     animation-delay: 3s;
 }
 .text-container:nth-child(5) {
@@ -375,7 +388,7 @@ body {
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     position: relative;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: min(4vw, 20px);
 }
 
 .about-me .right {
@@ -391,7 +404,8 @@ body {
     object-fit: contain;
     border-radius: 50%;
     background-color: #fff;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
+    box-shadow: 0 40px 15px -15px rgba(0, 0, 0, 0.2), inset 0 -50px 20px -20px rgba(0, 0, 0, 0.2);
 }
 
 .right img {
@@ -419,6 +433,168 @@ body {
     border-left: 15px solid #fff;
     right: -15px;
 }
+
+/* Project Section */
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10vw;
+}
+
+.projects h1 {
+    margin: 0 auto 50px;
+    padding: 20px;
+    border-radius: 20px;
+    width: max-content;
+    text-transform: uppercase;
+    font-size: min(4vw, 40px);
+    font-weight: 900;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.project-container {
+    display: flex;
+    width: 60vw;
+    height: max-content;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    padding: 50px;
+    gap: 3rem;
+}
+
+.project-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 200rem;
+    height: 30rem;
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.project-image img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    object-fit: cover;
+    transform: translateY(0%);
+    transition: transform 8s ease-out;
+}
+
+.project-image img:hover {
+    transform: translateY(-60%);
+}
+  
+.project-description p {
+    color: #767676;
+    font-size: min(20px, 1.7rem);
+    font-weight: 600;
+    text-align: center;
+    text-transform: none;
+}
+
+.project-description small {
+    align-items: center;
+    color: #2d2e32;
+    display: flex;
+    font-size: min(20px, 1.7rem);
+    font-weight: 900;
+    gap: .2rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+/* Form Section */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.contact-container {
+    justify-content: center;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    padding: 50px;
+}
+
+.form-heading {
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #000;
+    letter-spacing: 0.3rem;
+    margin-bottom: 1rem;
+    transition: opacity 0.3s;
+  }
+
+.contact-form {
+    text-align: center;
+}
+
+.contact-form-input {
+    width: 25vw;
+    padding: 0.5rem;
+    /* margin: 5px 0; */
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 0.1rem solid #aaa;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+    letter-spacing: 0.1rem;
+    height: 3rem;
+}
+
+.contact-form-textarea {
+    height: 15rem;
+    resize: none;
+}
+
+.form-submit-btn {
+    width: 15rem;
+    height: 3rem;
+    border-radius: 10px;
+    background-color: #545353;
+    text-transform: uppercase;
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.45);
+    border: none;
+    align-self: flex-start;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* Form Validation */
+.message {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #f55e5e;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin: 0 auto 1rem 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+  
+.error.message {
+    visibility: visible;
+    opacity: 1;
+}
+
 
 /* Utility Classes */
 
@@ -472,5 +648,25 @@ body {
 
     .right img, .left img {
         left: -10px;
+    }
+
+    .project-container {
+        flex-direction: column;
+        width: 100vw;
+        height: max-content;
+        justify-content: center;
+        border-radius: 20px;
+        background-color: transparent;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .project-image {
+        width: 80vw;
+    }
+
+    .contact-form-input {
+        width: 70vw;
+        font-size: 1rem;
     }
 }
