@@ -11,28 +11,30 @@ let show = document.querySelectorAll('.show')
 
 
 function responsive() {
+  if (window.scrollY > 50 || window.innerWidth <= 800) {
+    primaryNav.classList.add('side-bar');
+    navToggle.style.display = 'flex'
+    navBorder.style.display = 'none'
+  } else {
+    primaryNav.classList.remove('side-bar');
+    navToggle.style.display = 'none'
+    navBorder.style.display = 'block'
+  }
 
-    if (window.scrollY > 50 || window.innerWidth <= 800) {
-        primaryNav.classList.add('side-bar');
-        navToggle.style.display = 'flex'
-        navBorder.style.display = 'none'
-    } else {
-        primaryNav.classList.remove('side-bar');
-        navToggle.style.display = 'none'
-        navBorder.style.display = 'block'
-    }
+  primaryNav.classList.remove('show');
+  navToggle.classList.remove('active');
 
 }
 
 navToggle.addEventListener('click', () => {
-    if (primaryNav.classList.contains('side-bar')) {
-        primaryNav.classList.toggle('show');
-        navToggle.classList.toggle('active');
-    }
+  if (primaryNav.classList.contains('side-bar')) {
+      primaryNav.classList.toggle('show');
+      navToggle.classList.toggle('active');
+  }
 });
   
-  window.addEventListener('scroll', responsive);
-  window.addEventListener('resize', responsive);
+window.addEventListener('scroll', responsive);
+window.addEventListener('resize', responsive);
 
 responsive();
 
@@ -177,6 +179,46 @@ form.addEventListener("submit", (e) => {
     return message.classList.contains("error");
   });
 
-  notValid && e.preventDefault();
+  if (notValid) {
+    e.preventDefault();
+  } else {
+    e.preventDefault();
+    alert("Mail is sent");
+    
+    setTimeout(function() {
+      window.location.href = 'index.html';
+    }, 1000);
+  }
 });
 // End of Form Validation
+
+
+/* SmtpJS.com - v3.0.0 */
+// function sendEmail(e) {
+
+//   e.preventDefault()
+
+//   let emailDetails = {
+//     name: document.getElementById("name").value,
+//     email: document.getElementById("email").value,
+//     message: document.getElementById("message").value
+
+//   }
+
+// const serviceID = "service_05j5ail"
+// const templateID = "template_przqexf"
+
+// emailjs.send(serviceID,templateID, emailDetails).then(res=>{
+//     document.getElementById("name").value="";
+//     document.getElementById("email").value="";
+//     document.getElementById("message").value="";
+//     alert("Your message was sent successfully")
+// }).catch((err)=>console.log(err))
+
+// }
+
+// document.getElementById('contact-form').addEventListener('submit', function (e) {
+//   e.preventDefault();
+//   alert("Mail is sent");
+//   document.querySelector('.contact-form').reset();
+// });
